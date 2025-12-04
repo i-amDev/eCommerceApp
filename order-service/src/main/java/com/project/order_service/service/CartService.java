@@ -23,9 +23,7 @@ public class CartService {
     public boolean addToCart(String userId, CartItemRequest cartItemRequest) {
         ProductResponse productResponse = productServiceClient.getProductDetails(cartItemRequest.getProductId());
 
-        if (productResponse == null) return false;
-
-        if (productResponse.getStockQuantity() < cartItemRequest.getQuantity()) return false;
+        if (productResponse == null || productResponse.getStockQuantity() < cartItemRequest.getQuantity()) return false;
 //
 //        Optional<User> userOptional = userRepository.findById(Long.valueOf(userId));
 //
