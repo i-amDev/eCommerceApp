@@ -1,5 +1,6 @@
 package com.project.order_service.service;
 
+import com.project.order_service.clients.ProductServiceClient;
 import com.project.order_service.dto.CartItemRequest;
 import com.project.order_service.entity.CartItem;
 import com.project.order_service.repository.CartItemRepository;
@@ -15,6 +16,8 @@ import java.util.List;
 public class CartService {
 
     private final CartItemRepository cartItemRepository;
+
+    private final ProductServiceClient productServiceClient;
 
     public boolean addToCart(String userId, CartItemRequest cartItemRequest) {
 //        Optional<Product> productOptional = productRepository.findById(cartItemRequest.getProductId());
