@@ -29,6 +29,10 @@ public class CartService {
 
         if (productResponse == null || productResponse.getStockQuantity() < cartItemRequest.getQuantity()) return false;
 
+        UserResponse userResponse = userServiceClient.getUserDetails(userId);
+
+        if (userResponse == null) return false;
+
         CartItem existingCartItem = cartItemRepository.findByUserIdAndProductId(userId, cartItemRequest.getProductId());
 
         if (existingCartItem != null) {
