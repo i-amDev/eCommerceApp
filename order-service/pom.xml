@@ -12,7 +12,7 @@
 	<artifactId>order-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>order-service</name>
-	<description>Order service for cCommerce Application</description>
+	<description>Order service for eCommerce Application</description>
 	<url/>
 	<licenses>
 		<license/>
