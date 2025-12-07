@@ -18,6 +18,9 @@ public class JwtAuthFilter implements WebFilter {
             exchange.getResponse().setStatusCode(HttpStatus.UNAUTHORIZED);
             return exchange.getResponse().setComplete();
         }
+
+        // TODO: Validate JWT Token.
+
         return chain.filter(exchange);
     }
 }
