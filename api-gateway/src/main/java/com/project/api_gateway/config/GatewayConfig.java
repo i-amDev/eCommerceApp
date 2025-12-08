@@ -24,6 +24,4 @@ public class GatewayConfig {
                         .uri("http://localhost:8761"))
                 .build();
     }
-
-
 }
