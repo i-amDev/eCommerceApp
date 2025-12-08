@@ -19,6 +19,8 @@ public class GatewayConfig {
                         .uri("lb://ORDER-SERVICE"))
                 .route("eureka-server", r -> r.path("/eureka/main/**")
                         .uri("http://localhost:8761"))
+                .route("eureka-server-static", r -> r.path("/eureka/**")
+                        .uri("http://localhost:8761"))
                 .build();
     }
 
