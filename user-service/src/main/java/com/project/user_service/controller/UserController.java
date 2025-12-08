@@ -42,8 +42,4 @@ public class UserController {
         if (updated) return ResponseEntity.ok("User updated successfully.");
         return ResponseEntity.notFound().build();
     }
-
-
-
-
 }
