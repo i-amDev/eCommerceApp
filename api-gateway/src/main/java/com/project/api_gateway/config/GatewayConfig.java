@@ -13,6 +13,8 @@ public class GatewayConfig {
         return routeLocatorBuilder.routes()
                 .route("product-service", r -> r.path("/product/**")
                         .uri("lb://PRODUCT-SERVICE"))
+                .route("user-service", r -> r.path("/user/**")
+                        .uri("lb://USER-SERVICE"))
                 .build();
     }
 
