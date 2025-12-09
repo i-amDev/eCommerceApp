@@ -29,6 +29,4 @@ public class CartItem {
 
     @UpdateTimestamp
     private LocalDateTime updatedAt;
-
-
 }
