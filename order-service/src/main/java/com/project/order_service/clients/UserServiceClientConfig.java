@@ -23,5 +23,4 @@ public class UserServiceClientConfig {
         UserServiceClient userServiceClient = factory.createClient(UserServiceClient.class);
         return userServiceClient;
     }
-
 }
