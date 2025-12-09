@@ -37,5 +37,4 @@ public class CartController {
     public ResponseEntity<List<CartItem>> getCart(@RequestHeader("X-User-Id") String userId) {
         return ResponseEntity.ok(cartService.getCart(userId));
     }
-
 }
