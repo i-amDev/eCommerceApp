@@ -22,5 +22,4 @@ public class ProductResponse {
     private String imageUrl;
 
     private Boolean active;
-
 }
