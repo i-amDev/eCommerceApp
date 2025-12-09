@@ -8,5 +8,4 @@ public class CartItemRequest {
     private String productId;
 
     private Integer quantity;
-
 }
