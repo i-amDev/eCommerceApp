@@ -72,5 +72,4 @@ public class CartService {
     public void clearCart(String userId) {
         cartItemRepository.deleteByUserId(userId);
     }
-
 }
