@@ -60,7 +60,6 @@ public class UserService {
             address.setZipCode(user.getAddress().getZipCode());
             response.setAddress(address);
         }
-
         return response;
     }
 
