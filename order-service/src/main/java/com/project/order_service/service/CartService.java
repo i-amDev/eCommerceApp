@@ -50,7 +50,6 @@ public class CartService {
             cartItem.setPrice(BigDecimal.valueOf(1000));
             cartItemRepository.save(cartItem);
         }
-
         return true;
     }
 
