@@ -78,7 +78,6 @@ public class UserService {
             address.setZipCode(userRequest.getAddress().getZipCode());
             user.setAddress(address);
         }
-
         return user;
     }
 }
